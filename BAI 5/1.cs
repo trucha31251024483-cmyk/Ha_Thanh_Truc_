@@ -7,7 +7,7 @@ using System.Threading.Channels;
 namespace Ha_Thanh_Truc_.BAI_5
 {
     internal class _1
-    { static void Main(string[] args)
+    { static void Main3(string[] args)
         { //ex01();
             //ex02();
             //ex03();
@@ -27,7 +27,7 @@ namespace Ha_Thanh_Truc_.BAI_5
             //ex17();
             //ex18();
             //ex19();
-            ex20();
+            //ex20();
         }
         public static int Tong(int a, int b)
         {
