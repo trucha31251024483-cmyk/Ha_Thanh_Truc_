@@ -7,7 +7,7 @@ using System.Threading.Channels;
 namespace Ha_Thanh_Truc_.BAI_5
 {
     internal class _1
-    { static void Main3(string[] args)
+    { static void Main(string[] args)
         { //ex01();
             //ex02();
             //ex03();
@@ -23,7 +23,7 @@ namespace Ha_Thanh_Truc_.BAI_5
             //ex13();
             //ex14();
             //ex15();
-            //ex16();
+            ex16();
             //ex17();
             //ex18();
             //ex19();
@@ -71,10 +71,10 @@ namespace Ha_Thanh_Truc_.BAI_5
             for (int i = 2; i <= Math.Sqrt(a); i++)
             {
                 if (a % i == 0)
-                { return true; }
+                { return false; }
 
             }
-            return false;
+            return true;
         }
 
 

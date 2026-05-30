@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Text;
 
 namespace Ha_Thanh_Truc_.BAI_6
 {
     internal class _2
     {
-        public static void Main(string[] args)
+        public static void Main4(string[] args)
         {
             //ex01();
             //ex02();
@@ -81,12 +82,14 @@ namespace Ha_Thanh_Truc_.BAI_6
 
         static int ChiSo(int[] array, int n)
         {
-            for (int i = 0; i < array.Length; i++)
-            {
-                if (array[i] == n)
-                { return i; }
-            }
-            return -1;
+            //for (int i = 0; i < array.Length; i++)
+            //{
+            //    if (array[i] == n)
+            //    { return i; }
+            //}
+            //return -1;
+            int a = Array.IndexOf(array, n);
+            return a;
         }
 
         static void ex03()
