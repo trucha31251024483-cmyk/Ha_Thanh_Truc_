@@ -1,12 +1,13 @@
 ﻿ using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Text;
 
 namespace Ha_Thanh_Truc_.Session_3
 {
     internal class BaiTHSlide
     {
-        public static void Mainy(string[] args)
+        public static void Main(string[] args)
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
             //ex01();
@@ -17,7 +18,7 @@ namespace Ha_Thanh_Truc_.Session_3
             //ex06();
             //ex07();
             //ex08();
-            //ex09();
+            ex09();
             //ex10();
             //ex11();
             //ex12();
@@ -156,17 +157,20 @@ namespace Ha_Thanh_Truc_.Session_3
             int bd = Convert.ToInt32(Console.ReadLine());
             Console.Write("Đến: ");
             int kt = Convert.ToInt32(Console.ReadLine());
-            for (int n = bd; n <= kt; n++)
+            int n = bd;
+            int sum = 0;
+            for (n = bd; n <= kt; n++)
             {
-                int sum = 0;
+                
                 for (int i = 1; i < n; i++)
                 {
                     if (n % i == 0)
                         sum = sum + i;
-                }
-                if (sum == n)
-                    Console.WriteLine($"{n} là số hoàn hảo");
+                }          
+                    
             }
+            if (sum == n)
+            { Console.WriteLine($"{n} la so hoan hao"); }
 
         }
 
