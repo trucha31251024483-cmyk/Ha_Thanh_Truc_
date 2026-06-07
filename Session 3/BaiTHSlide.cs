@@ -7,7 +7,7 @@ namespace Ha_Thanh_Truc_.Session_3
 {
     internal class BaiTHSlide
     {
-        public static void Main(string[] args)
+        public static void Mainth(string[] args)
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
             //ex01();
